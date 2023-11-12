@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
         const LoginBg(),
         Scaffold(
           resizeToAvoidBottomInset: true,
-          backgroundColor: AppColors.wColor.withOpacity(0.0),
+          backgroundColor: AppColors.noColor,
           body: Container(
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Column(
@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(height: 160.h),
-                Image.asset('assets/images/logo.png', height: 250.h),
+                Image.asset('assets/images/lOGO (1).png', height: 250.h),
                 Expanded(
                   child: ListView(
                     padding: EdgeInsets.zero,

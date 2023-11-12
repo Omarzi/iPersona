@@ -7,14 +7,11 @@ class LoginBg extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: SvgPicture.asset(
-        AppImage.loginBg,
-        color: AppColors.primaryColor,
-        fit: BoxFit.fill,
-        height: double.infinity,
-      ),
+    return Image.asset(
+      'assets/images/logo.png',
+      // color: AppColors.primaryColor,
+      fit: BoxFit.fill,
+      height: double.infinity,
     );
   }
 }
