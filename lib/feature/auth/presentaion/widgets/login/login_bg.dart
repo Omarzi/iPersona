@@ -1,3 +1,5 @@
+import 'package:flutter_svg/flutter_svg.dart';
+
 import '../../../../../core/config/routes/app.dart';
 
 class LoginBg extends StatelessWidget {
@@ -5,10 +7,14 @@ class LoginBg extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(
-      AppImage.loginBg,
-      fit: BoxFit.fill,
-      height: double.infinity,
+    return Container(
+      color: Colors.white,
+      child: SvgPicture.asset(
+        AppImage.loginBg,
+        color: AppColors.primaryColor,
+        fit: BoxFit.fill,
+        height: double.infinity,
+      ),
     );
   }
 }

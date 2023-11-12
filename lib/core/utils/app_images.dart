@@ -2,7 +2,7 @@ const String mainPath = "assets/images";
 
 class AppImage {
   AppImage._();
-  static const String loginBg = "$mainPath/login_bg.jpg";
+  static const String loginBg = "$mainPath/Background.svg";
   static const String login = "$mainPath/login.svg";
   static const String book = "$mainPath/book.png";
   static const String twitter = "$mainPath/twitter.png";

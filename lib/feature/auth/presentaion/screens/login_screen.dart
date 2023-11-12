@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:persona2/core/config/routes/app.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -25,14 +26,15 @@ class _LoginScreenState extends State<LoginScreen> {
         const LoginBg(),
         Scaffold(
           resizeToAvoidBottomInset: true,
-          backgroundColor: AppColors.noColor,
+          backgroundColor: AppColors.wColor.withOpacity(0.0),
           body: Container(
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 400.h),
+                SizedBox(height: 160.h),
+                Image.asset('assets/images/logo.png', height: 250.h),
                 Expanded(
                   child: ListView(
                     padding: EdgeInsets.zero,
